@@ -6,9 +6,6 @@
 
 
 
-
-
-
 --
 -- code pour la création des vues
 --

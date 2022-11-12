@@ -1,22 +1,31 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
-    </ul>
-  </nav>
+  <div class="w-70 h-8 bg-white text-center font-fanwood-text text-[22px]">
+  <RouterLink to="Acceuil">
+    <p class="ml-2 ">TiK TaK </p>
+  </RouterLink>
+  </div>
+  <div class="flex justify-between w-70 h-8  bg-[#CCBDBE] font-fanwood-text">
+    <RouterLink to="/">
+      <p class="ml-2 ">PERSONNALISATION </p>
+    </RouterLink>
+    <RouterLink to="page1produit">
+      <p class="">PRODUIT</p>
+    </RouterLink>
+
+    <RouterLink to="produits">
+      <p class="">PRODUITS</p>
+    </RouterLink>
+
+    <RouterLink to="formulaireconnexion">
+      <p class="">CONNEXION </p>
+    </RouterLink>
+  
+  </div>
+  
 
   <!-- Affiche les pages -->
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view class="" />
   </Suspense>
 </template>
 
